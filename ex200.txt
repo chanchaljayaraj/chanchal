@@ -1,0 +1,125 @@
+YOU WILL BE WORKING WITH ONE SYSTEM FOR THIS EXAM
+##########################
+systemX.groupX.example.com in classroom user serverX.example.com   
+##########################
+root password is Cubsdelfi
+The Ip address for your system is provided by DHCP however should you deem it appropriate or necessary to reconfigure your system to use static IP address should be following settings                
+
+IN exam					        IN classroom
+---------			 	        -------------
+NAME/DEVICE=eth0                 	        NAME/DEVICE =System eth0
+HOSTNAME = systemX.groupX.example.com	  Hostname = serverX.example.com
+ip address  = 172.24.X.X                        ip address = 172.25.X.11
+NEtmask  = 255.255.255.0                        Netmask = 255.255.255.0
+Default getway = 172.24.X.254		Default Gateway = 172.25.X.254
+dns search path = groupX.example.com     dns-search path = example.com
+primary dns server = 172.25.254.254   primary dns server = 172.25.254.254
+
+
+############################################################
+CONFIGURE YUM CLIENT: 
+Yum baseurl path = http://content.example.com/rhel7.0/x86_64/dvd
+############################################################
+Question 1 | Configure Selinux 
+Configure Selinux from Permissive mode Enforcing mode
+---------------------------------------------------------------------
+
+Questions 2 | KERNEL UPDATE:
+Install the appropriate Kernel from 
+http://classroom.example.com/pub/updates/kernel-3.10.0-123.1.2.el7.x86_64.rpm. 
+Your machine should boot with updated kernel. 
+-------------------------------------------------------------
+      
+Qestions 3  |CREATE LVM:
+Create the "LVM" with the name "fedora" by using 30PE's from the volume group "redhat". Consider the PE size as " 8 MB". Mount it on /mnt/storage with file system vfat.
+------------------------------------------------------------------------------------------------------------------------------------------------------------   
+Questions 7    |   RESIZE LVM:
+Resize the lvm "/dev/finance/loans" so that after reboot size should be in between 350MB to 450MB. The filesystem will be "ext4"
+ ----------------------------------------------------------------------------------   
+Questions 5 | EXTEND SWAP SPACE
+Extend the SWAP space with "450" MB dont remove  the existing swap.
+-----------------------------------------------------------------------------------------------------
+Questions 6    |   USER'S GROUPS AND PERMISSION: 
+a.Create a group named "manager"
+b. A user sarah and harry should belongs to "manager" group as a secondary group   user natasha should have non-interactive shell and he should not be a memberof "manager" group. passwd for all user created should be "redhat123".
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+Questions 7   |   DIRECTORY COLLABORATION:
+Create the Directory "/home/manager" with the following characteristics. Group ownership of "/home/manager" should go to "manager" group. The directory should be have full permission for all members of "manager" group but not to any other users except "root". Files created under "/home/manager" should get the same group ownership is set to the "manager" group. 
+----------------------------------------------------------------------------------------------------------------------------
+Questions 8 | CRON JOB:
+The user sarah must configure a cron job that runs daily at 14:23 every day. and executes "/bin/echo "Hyer"
+a.max cannot creat cron job.
+------------------------------------------------------------------------------------------------------------------
+Questions 9 | ACCESS CONTROL LIST:
+Copy the file /etc/fstab to /var/tmp/ and configure the "ACL" as mention following. The file /vat/tmp/fstab is owned by the "root". 
+a.The file /var/tmp/fstab belongs to the group "root" The file /var/tmp/fstab should not be executable by any one. 
+b.The user "sarah" should able to read and write to the file. 
+c.The user "harry" can neither read nor write to the file. other users (future and current) shuold be able to read /var/tmp/fstab.
+--------------------------------------------------------------------------------------------------------------------------------------------------
+Questions 10 | ADD USERS:
+Create the user "julie" with uid 4332 with password "dig@example".
+---------------------------------------------------------------------
+Questions 11 | LOCATE THE FILE
+locate the files of owner "julie" and copy to the location /root/found directory.
+---------------------------------------------------------------------------------------
+Questions 12 | FIND WORDS:
+Find the string enter from "/usr/share/dict/words" file and copy the lines in /root/newly file.
+----------------------------------------------------------------------------------------------------------
+Questions 13 | BIND THE LDAPUSER FOR AUTHENTICATION:
+Note the following. BASE DN: dc=example,dc=com ldap path ldap://classroom.example.com/ Download the certificate from "http://classroom.example.com/pub/EXAMPLE-CA-CERT" LdapuserX should login into your system . 
+--------------------------------------------------------------------------------------------------------------------------------
+Questions 14 | NFS-AUTOMOUNT THE HOME DIRECTORY FOR LDAPUSER:
+Note the following. classroom.example.com "Nfs exports" and /home/guests/ldapuser10 Ldapuser's home directory is classroom.example.com:/home/guests/ldapuserX. Ldapuser's home directory should be automounted locally beneath /home/guests/ldapuser10. While login  ldapuser10 then only home directory should accesible.	
+------------------------------------------------------------------------------------------------------------------------------------------------Questions 15 | "NTP" CLIENT:
+Synchronize time of your system with the server classroom.example.com.
+--------------------------------------------------------------------------
+Questions 16 TAKE BACKUP:
+Compression & archive for /etc/hosts in /var/tmp/archive.tar.bz2 format. 
+---------------------------------------------------------------------
+
+################################################################################################################################################
+
+
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+ 
+
